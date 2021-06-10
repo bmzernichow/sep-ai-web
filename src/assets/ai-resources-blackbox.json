@@ -1,0 +1,261 @@
+[
+        {
+            "resource": "DeepExplain iNNvestigate tf-explain",
+            "id": 1,
+            "citationsPerYear": 1548,
+            "year": 2014,
+            "description": "Text",
+            "reference": "Zeiler, M.D.; Fergus, R. Visualizing and understanding convolutional networks. In European Conference on Computer Vision; Springer: Berlin/Heidelberg, Germany, 2014; pp. 818–833",
+            "resourceType": {
+                "paper": false,
+                "tool": true,
+                "method": false
+            },
+            "sourceURL": "https://arxiv.org/abs/1311.2901",
+            "repositoryUrl": "https://github.com/marcoancona/DeepExplain",
+            "localOrGlobal": {
+                "local": true,
+                "global": false
+                },
+            "dataTypes": {
+                "tabular": false,
+                "text": false,
+                "image": true,
+                "graph": false
+                },
+            "purposeOfInterpretability": {
+                "intrinsic": false,
+                "postHoc": true,
+                "enhanceFairness": false,
+                "testSensitivityOfPredictions": false
+                },
+            "modelSpecificOrAgnostic": {
+                "specific": true,
+                "agnostic": false,
+                "enhanceFairness": false,
+                "testSensitivityOfPredictions": false
+                }
+            },
+            {
+                "resource": "Grad-CAM tf-explain",
+                "id": 2,
+                "citationsPerYear": 798,
+                "year": 2017,
+                "description": "Text",
+                "reference": "Selvaraju, R.R.; Cogswell, M.; Das, A.; Vedantam, R.; Parikh, D.; Batra, D. Grad-cam: Visual explanations from deep networks via gradient-based localization. In Proceedings of the IEEE International Conference on Computer Vision, Venice, Italy, 22–29 October 2017; pp. 618–626.",
+                "resourceType": {
+                    "paper": false,
+                    "tool": true,
+                    "method": false
+                },
+                "sourceURL": "https://arxiv.org/abs/1610.02391",
+                "repositoryUrl": "https://github.com/ramprs/grad-cam",
+                "localOrGlobal": {
+                    "local": true,
+                    "global": false
+                    },
+                "dataTypes": {
+                    "tabular": false,
+                    "text": false,
+                    "image": true,
+                    "graph": false
+                    },
+                "purposeOfInterpretability": {
+                    "intrinsic": false,
+                    "postHoc": true,
+                    "enhanceFairness": false,
+                    "testSensitivityOfPredictions": false
+                    },
+                "modelSpecificOrAgnostic": {
+                    "specific": true,
+                    "agnostic": false,
+                    "enhanceFairness": false,
+                    "testSensitivityOfPredictions": false
+                    }
+                },
+                {
+                    "resource": "CAM",
+                    "id": 3,
+                    "citationsPerYear": 608,
+                    "year": 2016,
+                    "description": "Text",
+                    "reference": "Zhou, B.; Khosla, A.; Lapedriza, A.; Oliva, A.; Torralba, A. Learning deep features for discriminative localization. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, Las Vegas, NV, USA, 27–30 June 2016; pp. 2921–2929.",
+                    "resourceType": {
+                        "paper": false,
+                        "tool": true,
+                        "method": false
+                    },
+                    "sourceURL": "https://arxiv.org/abs/1512.04150",
+                    "repositoryUrl": "https://github.com/zhoubolei/CAM",
+                    "localOrGlobal": {
+                        "local": true,
+                        "global": false
+                        },
+                    "dataTypes": {
+                        "tabular": false,
+                        "text": false,
+                        "image": true,
+                        "graph": false
+                        },
+                    "purposeOfInterpretability": {
+                        "intrinsic": false,
+                        "postHoc": true,
+                        "enhanceFairness": false,
+                        "testSensitivityOfPredictions": false
+                        },
+                    "modelSpecificOrAgnostic": {
+                        "specific": true,
+                        "agnostic": false,
+                        "enhanceFairness": false,
+                        "testSensitivityOfPredictions": false
+                        }
+                    },
+                    {
+                        "resource": "iNNvestigate",
+                        "id": 4,
+                        "citationsPerYear": 365,
+                        "year": 2014,
+                        "description": "Text",
+                        "reference": "Springenberg, J.; Dosovitskiy, A.; Brox, T.; Riedmiller, M. Striving for Simplicity: The All Convolutional Net. In Proceedings of the ICLR (Workshop Track), San Diego, CA, USA, 7–9 May 2015.",
+                        "resourceType": {
+                            "paper": false,
+                            "tool": true,
+                            "method": false
+                        },
+                        "sourceURL": "https://arxiv.org/abs/1412.6806",
+                        "repositoryUrl": "https://github.com/albermax/innvestigate",
+                        "localOrGlobal": {
+                            "local": true,
+                            "global": false
+                            },
+                        "dataTypes": {
+                            "tabular": false,
+                            "text": false,
+                            "image": true,
+                            "graph": false
+                            },
+                        "purposeOfInterpretability": {
+                            "intrinsic": false,
+                            "postHoc": true,
+                            "enhanceFairness": false,
+                            "testSensitivityOfPredictions": false
+                            },
+                        "modelSpecificOrAgnostic": {
+                            "specific": true,
+                            "agnostic": false,
+                            "enhanceFairness": false,
+                            "testSensitivityOfPredictions": false
+                            }
+                        },
+                        {
+                            "resource": "DeepExplain iNNvestigate Integrated Gradients tf-explain alibi Skater",
+                            "id": 5,
+                            "citationsPerYear": 247,
+                            "year": 2017,
+                            "description": "Text",
+                            "reference": "Sundararajan, M.; Taly, A.; Yan, Q. Axiomatic attribution for deep networks. In Proceedings of the 34th International Conference on Machine Learning, Sydney, Australia, 6–11 August 2017; Volume 70, pp. 3319–3328.",
+                            "resourceType": {
+                                "paper": false,
+                                "tool": true,
+                                "method": false
+                            },
+                            "sourceURL": "https://arxiv.org/abs/1703.01365",
+                            "repositoryUrl": "https://github.com/marcoancona/DeepExplain",
+                            "localOrGlobal": {
+                                "local": true,
+                                "global": false
+                                },
+                            "dataTypes": {
+                                "tabular": true,
+                                "text": true,
+                                "image": true,
+                                "graph": false
+                                },
+                            "purposeOfInterpretability": {
+                                "intrinsic": false,
+                                "postHoc": true,
+                                "enhanceFairness": false,
+                                "testSensitivityOfPredictions": false
+                                },
+                            "modelSpecificOrAgnostic": {
+                                "specific": true,
+                                "agnostic": false,
+                                "enhanceFairness": false,
+                                "testSensitivityOfPredictions": false
+                                }
+                            },
+                            {
+                                "resource": "Deep Visualization Toolbox",
+                                "id": 6,
+                                "citationsPerYear": 228,
+                                "year": 2015,
+                                "description": "Text",
+                                "reference": "Yosinski, J.; Clune, J.; Fuchs, T.; Lipson, H. Understanding neural networks through deep visualization. In Proceedings of the 32nd International Conference on Machine Learning, Lille, France, 6–11 July 2015.",
+                                "resourceType": {
+                                    "paper": false,
+                                    "tool": true,
+                                    "method": false
+                                },
+                                "sourceURL": "https://arxiv.org/abs/1506.06579",
+                                "repositoryUrl": "https://github.com/yosinski/deep-visualization-toolbox",
+                                "localOrGlobal": {
+                                    "local": true,
+                                    "global": false
+                                    },
+                                "dataTypes": {
+                                    "tabular": false,
+                                    "text": false,
+                                    "image": true,
+                                    "graph": false
+                                    },
+                                "purposeOfInterpretability": {
+                                    "intrinsic": false,
+                                    "postHoc": true,
+                                    "enhanceFairness": false,
+                                    "testSensitivityOfPredictions": false
+                                    },
+                                "modelSpecificOrAgnostic": {
+                                    "specific": true,
+                                    "agnostic": false,
+                                    "enhanceFairness": false,
+                                    "testSensitivityOfPredictions": false
+                                    }
+                                },
+                                {
+                                    "resource": "DeepExplain iNNvestigate The LRP Toolbox Skater",
+                                    "id": 7,
+                                    "citationsPerYear": 218,
+                                    "year": 2015,
+                                    "description": "Text",
+                                    "reference": "Bach, S.; Binder, A.; Montavon, G.; Klauschen, F.; Müller, K.R.; Samek,W. On pixel-wise explanations for non-linear classifier decisions by layer-wise relevance propagation. PLoS ONE 2015, 10, e0130140.",
+                                    "resourceType": {
+                                        "paper": false,
+                                        "tool": true,
+                                        "method": false
+                                    },
+                                    "sourceURL": "https://doi.org/10.1371/journal.pone.0130140",
+                                    "repositoryUrl": "https://github.com/sebastian-lapuschkin/lrp_toolbox",
+                                    "localOrGlobal": {
+                                        "local": true,
+                                        "global": false
+                                        },
+                                    "dataTypes": {
+                                        "tabular": false,
+                                        "text": true,
+                                        "image": true,
+                                        "graph": false
+                                        },
+                                    "purposeOfInterpretability": {
+                                        "intrinsic": false,
+                                        "postHoc": true,
+                                        "enhanceFairness": false,
+                                        "testSensitivityOfPredictions": false
+                                        },
+                                    "modelSpecificOrAgnostic": {
+                                        "specific": true,
+                                        "agnostic": false,
+                                        "enhanceFairness": false,
+                                        "testSensitivityOfPredictions": false
+                                        }
+                                    }
+    ]
