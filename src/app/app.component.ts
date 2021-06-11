@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import airesourcesBlackBox from '../assets/ai-resources-blackbox.json';
+import airesourcesWhiteBox from '../assets/ai-resources-whitebox.json';
+import airesourcesFairness from '../assets/ai-resources-fairness.json';
+import airesourcesSensitivity from '../assets/ai-resources-sensitivity.json';
+
+import { AgileBestPracticesIndexComponent } from './agile-best-practices-index/agile-best-practices-index.component';
+
 import aidefs from '../assets/ai-definitions.json';
 
 @Component({
@@ -37,7 +43,17 @@ export class AppComponent implements OnInit {
     }
     else if (event.srcElement.id == "btn-whitebox") {
       this.selectedButton = event.srcElement.id;
-      this.selfdescription = airesourcesBlackBox;
+      this.selfdescription = airesourcesWhiteBox;
+      console.log(event.srcElement.id);
+    }
+    else if (event.srcElement.id == "btn-fairness") {
+      this.selectedButton = event.srcElement.id;
+      this.selfdescription = airesourcesFairness;
+      console.log(event.srcElement.id);
+    }
+    else if (event.srcElement.id == "btn-sensitivity") {
+      this.selectedButton = event.srcElement.id;
+      this.selfdescription = airesourcesSensitivity;
       console.log(event.srcElement.id);
     }
   }

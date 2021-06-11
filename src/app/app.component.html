@@ -6,11 +6,6 @@
         <span class="title">Agile Framework for AI and ML Software Development</span>
       </a>
     </div>
-    <div class="header-actions">
-      <a href="..." class="nav-link nav-icon" aria-label="settings">
-        <clr-icon shape="cog"></clr-icon>
-      </a>
-    </div>
   </header>
 
   <div class="navbar">
@@ -18,7 +13,7 @@
       <clr-tab>
         <button clrTabLink>About this website</button>
         <clr-tab-content *clrIfActive="true">
-          <h4>Agile Development of Explainable AI Solutions</h4>
+          <h4>Why we see a need for an agile framework</h4>
           <div class="text">
             <div class="content-area">
               <p>
@@ -36,27 +31,7 @@
             <div class="clr-col-lg-10 clr-col-md-8 clr-col-12">
               <div class="card">
                 <div class="card-header">
-                  Header
-                </div>
-                <div class="card-block">
-                  <div class="card-title">
-                    Block
-                  </div>
-                  <div class="card-text">
-                    ...
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <button class="btn btn-sm btn-link">Take me to the Framework</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="clr-row">
-            <div class="clr-col-lg-10 clr-col-md-8 clr-col-12">
-              <div class="card">
-                <div class="card-header">
-                  Header
+                  Explainable AI Resources
                 </div>
                 <div class="card-block">
                   <div class="card-title">
@@ -72,9 +47,29 @@
               </div>
             </div>
           </div>
+          <div class="clr-row">
+            <div class="clr-col-lg-10 clr-col-md-8 clr-col-12">
+              <div class="card">
+                <div class="card-header">
+                  Agile Best Practices
+                </div>
+                <div class="card-block">
+                  <div class="card-title">
+                    Block
+                  </div>
+                  <div class="card-text">
+                    ...
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-sm btn-link">Take me to the Best Practices</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </clr-tab-content>
       </clr-tab>
-      <clr-tab>
+      <!-- <clr-tab>
 
         <button clrTabLink>Agile Framework for Explainable AI Pipelines</button>
         <clr-tab-content *clrIfActive>
@@ -129,7 +124,7 @@
           </div>
           
         </clr-tab-content>
-      </clr-tab>
+      </clr-tab> -->
       <clr-tab>
         <button clrTabLink>Explainable AI Resources</button>
         <clr-tab-content *clrIfActive>
@@ -140,15 +135,15 @@
               <label for="btn-blackbox">Black Box</label>
             </div>
             <div class="radio btn">
-              <input type="radio" name="btn-group-demo-radios" id="btn-whitebox" />
+              <input type="radio" name="btn-group-demo-radios" id="btn-whitebox" (change)="handleButtonChange($event)" />
               <label for="btn-whitebox">White Box</label>
             </div>
             <div class="radio btn">
-              <input type="radio" name="btn-group-demo-radios" id="btn-fairness" />
+              <input type="radio" name="btn-group-demo-radios" id="btn-fairness" (change)="handleButtonChange($event)" />
               <label for="btn-fairness">Enhance Fairness of Model</label>
             </div>
             <div class="radio btn">
-              <input type="radio" name="btn-group-demo-radios" id="btn-sensitivity" />
+              <input type="radio" name="btn-group-demo-radios" id="btn-sensitivity" (change)="handleButtonChange($event)" />
               <label for="btn-sensitivity">Test Sensitivity of Predictions</label>
             </div>
           </div>
@@ -226,29 +221,8 @@
         <button clrTabLink>Agile Best Practices</button>
         <clr-tab-content *clrIfActive>
           <div class="content-container">
-            <div class="content-area"></div>
-            <nav class="sidenav">
-                <section class="sidenav-content">
-                    <section class="nav-group collapsible">
-                        <input id="tabexample1" type="checkbox" checked>
-                        <label for="tabexample1">Starts collapsed</label>
-                        <ul class="nav-list">
-                            <li><a class="nav-link">Link 1</a></li>
-                            <li><a class="nav-link">Link 2</a></li>
-                            <li><a class="nav-link">Link 3</a></li>
-                        </ul>
-                    </section>
-                    <section class="nav-group collapsible">
-                        <input id="tabexample2" type="checkbox">
-                        <label for="tabexample2">Starts expanded</label>
-                        <ul class="nav-list">
-                            <li><a class="nav-link">Link 1</a></li>
-                            <li><a class="nav-link">Link 2</a></li>
-                            <li><a class="nav-link">Link 3</a></li>
-                        </ul>
-                    </section>
-                </section>
-            </nav>
+              <a routerLink="/"></a>
+            <router-outlet></router-outlet>          
           </div>
         </clr-tab-content>
       </clr-tab>

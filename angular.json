@@ -21,7 +21,8 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/app/div/why_agile_ai.html"
             ],
             "styles": [
               "node_modules/@clr/icons/clr-icons.min.css",

@@ -1,0 +1,187 @@
+[
+        {
+            "resource": "InterpretML",
+            "id": 1,
+            "citationsPerYear": 130,
+            "year": 2015,
+            "description": "Text",
+            "reference": "Caruana, R.; Lou, Y.; Gehrke, J.; Koch, P.; Sturm, M.; Elhadad, N. Intelligible models for healthcare: Predicting pneumonia risk and hospital 30-day readmission. In Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, Sydney, Australia, 10–13 August 2015; pp. 1721–1730.",
+            "resourceType": {
+                "paper": false,
+                "tool": true,
+                "method": false
+            },
+            "sourceURL": "https://dl.acm.org/doi/10.1145/2783258.2788613",
+            "repositoryUrl": "https://github.com/interpretml/interpret",
+            "localOrGlobal": {
+                "local": false,
+                "global": true
+                },
+            "dataTypes": {
+                "tabular": true,
+                "text": false,
+                "image": false,
+                "graph": false
+                },
+            "purposeOfInterpretability": {
+                "intrinsic": true,
+                "postHoc": false,
+                "enhanceFairness": false,
+                "testSensitivityOfPredictions": false
+                },
+            "modelSpecificOrAgnostic": {
+                "specific": true,
+                "agnostic": false,
+                "enhanceFairness": false,
+                "testSensitivityOfPredictions": false
+                }
+            },
+            {
+                "resource": "Slim",
+                "id": 1,
+                "citationsPerYear": 35,
+                "year": 2016,
+                "description": "Text",
+                "reference": "Ustun, B.; Rudin, C. Supersparse linear integer models for optimized medical scoring systems. Mach. Learn. 2016, 102, 349–391.",
+                "resourceType": {
+                    "paper": false,
+                    "tool": true,
+                    "method": false
+                },
+                "sourceURL": "https://arxiv.org/abs/1502.04269",
+                "repositoryUrl": "https://github.com/ustunb/slim-python",
+                "localOrGlobal": {
+                    "local": false,
+                    "global": true
+                    },
+                "dataTypes": {
+                    "tabular": true,
+                    "text": false,
+                    "image": false,
+                    "graph": false
+                    },
+                "purposeOfInterpretability": {
+                    "intrinsic": true,
+                    "postHoc": false,
+                    "enhanceFairness": false,
+                    "testSensitivityOfPredictions": false
+                    },
+                "modelSpecificOrAgnostic": {
+                    "specific": true,
+                    "agnostic": false,
+                    "enhanceFairness": false,
+                    "testSensitivityOfPredictions": false
+                    }
+                },
+                {
+                    "resource": "AIX360",
+                    "id": 1,
+                    "citationsPerYear": 12,
+                    "year": 2018,
+                    "description": "Text",
+                    "reference": "Dash, S.; Gunluk, O.;Wei, D. Boolean decision rules via column generation. In Proceedings of the Advances in Neural Information Processing Systems, Montréal, QC, Canada, 3–8 December 2018; pp. 4655–4665.",
+                    "resourceType": {
+                        "paper": false,
+                        "tool": true,
+                        "method": false
+                    },
+                    "sourceURL": "https://papers.nips.cc/paper/2018/hash/743394beff4b1282ba735e5e3723ed74-Abstract.html",
+                    "repositoryUrl": "https://github.com/Trusted-AI/AIX360",
+                    "localOrGlobal": {
+                        "local": false,
+                        "global": true
+                        },
+                    "dataTypes": {
+                        "tabular": true,
+                        "text": false,
+                        "image": false,
+                        "graph": false
+                        },
+                    "purposeOfInterpretability": {
+                        "intrinsic": true,
+                        "postHoc": false,
+                        "enhanceFairness": false,
+                        "testSensitivityOfPredictions": false
+                        },
+                    "modelSpecificOrAgnostic": {
+                        "specific": true,
+                        "agnostic": false,
+                        "enhanceFairness": false,
+                        "testSensitivityOfPredictions": false
+                        }
+                    },
+                    {
+                        "resource": "AIX360",
+                        "id": 1,
+                        "citationsPerYear": 12,
+                        "year": 2019,
+                        "description": "Text",
+                        "reference": "Hind, M.; Wei, D.; Campbell, M.; Codella, N.C.; Dhurandhar, A.; Mojsilovi´c, A.; Natesan Ramamurthy, K.; Varshney, K.R. TED: Teaching AI to explain its decisions. In Proceedings of the 2019 AAAI/ACM Conference on AI, Ethics, and Society, Honolulu, HI, USA, 27–28 January 2019; pp. 123–129.",
+                        "resourceType": {
+                            "paper": false,
+                            "tool": true,
+                            "method": false
+                        },
+                        "sourceURL": "https://arxiv.org/abs/1811.04896",
+                        "repositoryUrl": "https://github.com/Trusted-AI/AIX360",
+                        "localOrGlobal": {
+                            "local": true,
+                            "global": false
+                            },
+                        "dataTypes": {
+                            "tabular": true,
+                            "text": false,
+                            "image": false,
+                            "graph": false
+                            },
+                        "purposeOfInterpretability": {
+                            "intrinsic": true,
+                            "postHoc": false,
+                            "enhanceFairness": false,
+                            "testSensitivityOfPredictions": false
+                            },
+                        "modelSpecificOrAgnostic": {
+                            "specific": true,
+                            "agnostic": false,
+                            "enhanceFairness": false,
+                            "testSensitivityOfPredictions": false
+                            }
+                        },
+                        {
+                            "resource": "AIX360",
+                            "id": 1,
+                            "citationsPerYear": 5,
+                            "year": 2019,
+                            "description": "Text",
+                            "reference": "Wei, D.; Dash, S.; Gao, T.; Gunluk, O. Generalized Linear Rule Models. In Proceedings of the 36th International Conference on Machine Learning, Long Beach, CA, USA, 9–15 June 2019; Volume 97, pp. 6687–6696.",
+                            "resourceType": {
+                                "paper": false,
+                                "tool": true,
+                                "method": false
+                            },
+                            "sourceURL": "https://arxiv.org/abs/1906.01761",
+                            "repositoryUrl": "https://github.com/Trusted-AI/AIX360",
+                            "localOrGlobal": {
+                                "local": false,
+                                "global": true
+                                },
+                            "dataTypes": {
+                                "tabular": true,
+                                "text": false,
+                                "image": false,
+                                "graph": false
+                                },
+                            "purposeOfInterpretability": {
+                                "intrinsic": true,
+                                "postHoc": false,
+                                "enhanceFairness": false,
+                                "testSensitivityOfPredictions": false
+                                },
+                            "modelSpecificOrAgnostic": {
+                                "specific": true,
+                                "agnostic": false,
+                                "enhanceFairness": false,
+                                "testSensitivityOfPredictions": false
+                                }
+                            }
+    ]

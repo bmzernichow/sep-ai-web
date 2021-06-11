@@ -1,0 +1,39 @@
+[
+        {
+            "resource": "sensitivity",
+            "id": 1,
+            "citationsPerYear": 1548,
+            "year": 2014,
+            "description": "Text",
+            "reference": "Zeiler, M.D.; Fergus, R. Visualizing and understanding convolutional networks. In European Conference on Computer Vision; Springer: Berlin/Heidelberg, Germany, 2014; pp. 818–833",
+            "resourceType": {
+                "paper": false,
+                "tool": true,
+                "method": false
+            },
+            "sourceURL": "https://arxiv.org/abs/1311.2901",
+            "repositoryUrl": "https://github.com/marcoancona/DeepExplain",
+            "localOrGlobal": {
+                "local": true,
+                "global": false
+                },
+            "dataTypes": {
+                "tabular": false,
+                "text": false,
+                "image": true,
+                "graph": false
+                },
+            "purposeOfInterpretability": {
+                "intrinsic": false,
+                "postHoc": true,
+                "enhanceFairness": false,
+                "testSensitivityOfPredictions": false
+                },
+            "modelSpecificOrAgnostic": {
+                "specific": true,
+                "agnostic": false,
+                "enhanceFairness": false,
+                "testSensitivityOfPredictions": false
+                }
+            }
+    ]

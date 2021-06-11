@@ -1,0 +1,39 @@
+[
+        {
+            "resource": "debiaswe",
+            "id": 1,
+            "citationsPerYear": 217,
+            "year": 2016,
+            "description": "Text",
+            "reference": "Bolukbasi, T.; Chang, K.W.; Zou, J.Y.; Saligrama, V.; Kalai, A.T. Man is to computer programmer as woman is to homemaker? Debiasing word embeddings. In Proceedings of the Advances in Neural Information Processing Systems, Barcelona, Spain, 5–10 December 2016; pp. 4349–4357.",
+            "resourceType": {
+                "paper": false,
+                "tool": true,
+                "method": false
+            },
+            "sourceURL": "https://arxiv.org/abs/1607.06520",
+            "repositoryUrl": "https://github.com/marcoancona/DeepExplain",
+            "localOrGlobal": {
+                "local": false,
+                "global": true
+                },
+            "dataTypes": {
+                "tabular": false,
+                "text": true,
+                "image": false,
+                "graph": false
+                },
+            "purposeOfInterpretability": {
+                "intrinsic": false,
+                "postHoc": false,
+                "enhanceFairness": true,
+                "testSensitivityOfPredictions": false
+                },
+            "modelSpecificOrAgnostic": {
+                "specific": false,
+                "agnostic": true,
+                "enhanceFairness": false,
+                "testSensitivityOfPredictions": false
+                }
+            }
+    ]
