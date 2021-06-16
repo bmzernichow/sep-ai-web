@@ -11,6 +11,7 @@ import { MicrosoftTdspComponent } from './microsoft-tdsp/microsoft-tdsp.componen
 import { CrispDmComponent } from './crisp-dm/crisp-dm.component';
 import { CpmaiComponent } from './cpmai/cpmai.component';
 import { ComparisonTableComponent } from './comparison-table/comparison-table.component';
+import { GraphDataScienceComponent } from './graph-data-science/graph-data-science.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: AppComponent },
@@ -49,6 +50,10 @@ const routes: Routes = [
   {
     path: 'agile-best-practices/comparison-table',
     component: ComparisonTableComponent,
+  },
+  {
+    path: 'graph-data-science',
+    component: GraphDataScienceComponent,
   }
 ];
 

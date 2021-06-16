@@ -17,6 +17,7 @@ import { MicrosoftTdspComponent } from './microsoft-tdsp/microsoft-tdsp.componen
 import { CrispDmComponent } from './crisp-dm/crisp-dm.component';
 import { CpmaiComponent } from './cpmai/cpmai.component';
 import { ComparisonTableComponent } from './comparison-table/comparison-table.component';
+import { GraphDataScienceComponent } from './graph-data-science/graph-data-science.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ComparisonTableComponent } from './comparison-table/comparison-table.co
     MicrosoftTdspComponent,
     CrispDmComponent,
     CpmaiComponent,
-    ComparisonTableComponent
+    ComparisonTableComponent,
+    GraphDataScienceComponent
   ],
   imports: [
     BrowserModule,

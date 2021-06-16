@@ -1,230 +1,273 @@
 <div class="main-container">
   <header class="header-6">
     <div class="branding">
-      <a href="..." class="nav-link">
+      <!-- <a href="..." class="nav-link"> -->
         <clr-icon shape="vm" class="is-inverse"></clr-icon>
-        <span class="title">Agile Framework for AI and ML Software Development</span>
-      </a>
+        <span class="title">Data Science: Explainable AI (XAI), Agile AI Frameworks and Graph Data Science</span>
+      <!-- </a> -->
     </div>
   </header>
 
+  <!-- About this website, index page -->
   <div class="navbar">
     <clr-tabs>
       <clr-tab>
         <button clrTabLink>About this website</button>
         <clr-tab-content *clrIfActive="true">
-          <h4>Why we see a need for an agile framework</h4>
+          <h3>Why we see a need for an agile framework</h3>
           <div class="text">
             <div class="content-area">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua. Non enim praesent elementum facilisis leo vel fringilla. Euismod elementum nisi quis eleifend quam
-                adipiscing vitae proin. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Dolor magna
-                eget est lorem ipsum dolor sit amet consectetur. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus.
-                Volutpat commodo sed egestas egestas. Pharetra sit amet aliquam id diam maecenas ultricies mi. Pulvinar etiam
-                non quam lacus suspendisse faucibus interdum posuere. Viverra nibh cras pulvinar mattis nunc sed blandit libero
-                volutpat.
-              </p>
+              <p>Data science is an interdisciplinary field that uses scientific methods, processes, algorithms and systems to
+                extract knowledge and insights from structured and unstructured data [<a
+                  href="https://cacm.acm.org/magazines/2013/12/169933-data-science-and-prediction/fulltext">Dahrm V, 2003</a>].
+                It is related to data mining, machine learning (ML) and big data, and can be applied to data
+                across a broad range of application domains.</p>
+              <p>The goal of this website is to provide a state-of-the-art (SOTA) overview of three areas within data science:</p>
             </div>
           </div>
+
+          <!-- Explainable AI Resources -->
           <div class="clr-row">
             <div class="clr-col-lg-10 clr-col-md-8 clr-col-12">
               <div class="card">
                 <div class="card-header">
-                  Explainable AI Resources
+                  Explainable AI (XAI)
                 </div>
                 <div class="card-block">
-                  <div class="card-title">
-                    Block
-                  </div>
                   <div class="card-text">
-                    ...
+                    <table style="width:100%" cellpadding="2">
+                      <tr>
+                        <td width="12%"><img src="assets/img/explainable-ai.png" height="200"></td>
+                        <td width="88%" style="text-align:left;vertical-align:top;padding-left:20px">Explainable AI (XAI) is artificial intelligence (AI)
+                          in which the results of the solution can be understood by humans. As more and more AI solutions are being
+                          deployed, it is becoming increasingly important that we are able to explain the behaviour of the AI solutions
+                          so that we can trust that the predictions, recommendations and decisions they make are safe and
+                          non-discriminatory. The
+                          <a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_21_1682">European Commission</a> is
+                          currently proposing rules and actions for trust in high-risk AI systems. Such systems must be subject to
+                          strict
+                          obligations before being offered in the market.<br><br> This section of the website provides an overview of
+                          methods and tools for XAI based on the paper <a
+                            href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7824368/">"Explainable AI: A Review
+                            of Machine Learning Interpretability Methods"</a> by Linardatos et al. The paper gives a comprehensive
+                          overview of XAI resources and classifies them according to local vs global explainability, data types, purpose
+                          of interpretability, and model specific vs model agnostic applicability.
+                        </td>
+                      </tr>
+                    </table>
                   </div>
                 </div>
                 <div class="card-footer">
-                  <button class="btn btn-sm btn-link">Take me to the Resources</button>
+                  <button id="explainableAIResources" class="btn btn-sm btn-link" (click)="triggerTabChange($event)">Take me to the methods and tools</button>
                 </div>
               </div>
             </div>
           </div>
+
+          <!-- Agile Ai Frameworks -->
           <div class="clr-row">
             <div class="clr-col-lg-10 clr-col-md-8 clr-col-12">
               <div class="card">
                 <div class="card-header">
-                  Agile Best Practices
+                  Agile AI Frameworks
                 </div>
                 <div class="card-block">
-                  <div class="card-title">
-                    Block
-                  </div>
                   <div class="card-text">
-                    ...
+                    <table style="width:100%" cellpadding="2">
+                      <tr>
+                        <td width="12%"><a href="agile-ai-frameworks/index.html"><img src="assets/img/agile-ai-frameworks.png" height="200"></a></td>
+                        <td width="88%" style="text-align:left;vertical-align:top;padding-left:20px">Agile AI Frameworks are lightweight methodology
+                          frameworks suited to data science projects. In contrast to agile software development frameworks such as Scrum
+                          that focuses
+                          on incremental delivery of <i>software products</i>, AI frameworks have been adapted
+                          to support the data science process where the focus is on delivering <i>actionable insights</i> from data.
+                          <br><br> This section of the website provides an overview and description of the
+                          most popular agile AI frameworks, and a comparison table that gives you some guidelines for selecting the one
+                          that
+                          best fits your data science project. As a starting point we have used the paper <a
+                            href="https://ieeexplore.ieee.org/abstract/document/9377813">"Identifying the most Common Frameworks
+                            Data Science Teams Use to Structure and Coordinate their Projects"</a> by Saltz et al. The paper presents
+                          the results
+                          of a study of 109 professionals regarding the frameworks they use for data science projects. According to the
+                          study, CRISP-DM (CRoss Industry Standard Process for Data Mining) and Scrum are the two most popular
+                          frameworks in use.
+                        </td>
+                      </tr>
+                    </table>
                   </div>
                 </div>
                 <div class="card-footer">
-                  <button class="btn btn-sm btn-link">Take me to the Best Practices</button>
+                  <button id="agileAIFrameworks" class="btn btn-sm btn-link" (click)="triggerTabChange($event)">Take me to the AI frameworks</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Graph Data Science -->
+          <div class="clr-row">
+            <div class="clr-col-lg-10 clr-col-md-8 clr-col-12">
+              <div class="card">
+                <div class="card-header">
+                  Graph Data Science
+                </div>
+                <div class="card-block">
+                  <div class="card-text">
+                    <table style="width:100%" cellpadding="2">
+                      <tr>
+                        <th style="text-align:left" colspan="2">Graph Data Science</th>
+                      </tr>
+                      <tr>
+                        <td width="12%"><a href="graph-data-science/index.html"><img src="assets/img/graph-data-science.png" height="200"></a></td>
+                        <td width="88%" style="text-align:left;vertical-align:top;padding-left:20px">Graphs used to represent connected data are gaining
+                          popularity in the area of machine learning and tools for graph analytics and graph-native machine learning are
+                          starting to emerge. A graph data structure has two basic elements: nodes and edges.
+                          Nodes represents entities in the data, while edges represents relationships between entities. <br><br> This
+                          section
+                          of the website
+                          provides an overview of graph analytics and machine learning tools available for two different types of graph
+                          data models: Labeled Property Graphs and RDF Knowledge Graphs.</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <button id="graphDataScience" class="btn btn-sm btn-link" (click)="triggerTabChange($event)">Take me to Graph Data Science overview</button>
                 </div>
               </div>
             </div>
           </div>
         </clr-tab-content>
       </clr-tab>
-      <!-- <clr-tab>
 
-        <button clrTabLink>Agile Framework for Explainable AI Pipelines</button>
-        <clr-tab-content *clrIfActive>
-
-          <h4>Agile Development of Explainable AI Solutions</h4>
-
-          <div>
-            <ul class="clr-timeline clr-timeline-horizontal">
-              <li class="clr-timeline-step">
-                <clr-icon shape="circle" aria-label="Not started"></clr-icon>
-                <div class="clr-timeline-step-body">
-                  <span class="clr-timeline-step-title">Start</span>
-                  <span class="clr-timeline-step-description">Root CA certificate requested.</span>
-                </div>
-              </li>
-              <li class="clr-timeline-step">
-                <clr-icon shape="dot-circle" aria-current="true" aria-label="Current"></clr-icon>
-                <div class="clr-timeline-step-body">
-                  <span class="clr-timeline-step-title">Add KMS</span>
-                  <span class="clr-timeline-step-description">
-                    Root CA certificate requested. Upload it to the KMS to complete the connection.
-                  </span>
-                </div>
-              </li>
-              <li class="clr-timeline-step">
-                <clr-icon shape="circle" aria-label="Not started"></clr-icon>
-                <div class="clr-timeline-step-body">
-                  <span class="clr-timeline-step-title">Make vCenter trust KMS</span>
-                  <span class="clr-timeline-step-description">
-                    Root CA certificate requested. Upload it to the KMS to complete the connection. Third sentence is very long
-                    and very long.
-                  </span>
-                </div>
-              </li>
-              <li class="clr-timeline-step">
-                <clr-icon shape="circle" aria-label="Not started"></clr-icon>
-                <div class="clr-timeline-step-body">
-                  <span class="clr-timeline-step-title">Make KMS trust vCenter</span>
-                  <span class="clr-timeline-step-description">Upload it to the KMS to complete the connection. Third
-                    sentence.
-                  </span>
-                </div>
-              </li>
-              <li class="clr-timeline-step">
-                <clr-icon shape="success-standard" aria-label="Completed"></clr-icon>
-                <div class="clr-timeline-step-body">
-                  <span class="clr-timeline-step-title">Completed</span>
-                  <span class="clr-timeline-step-description">Successfully completed</span>
-                </div>
-              </li>
-            </ul>
-          </div>
-          
-        </clr-tab-content>
-      </clr-tab> -->
+      <!-- Tab: Explainable AI (XAI) -->
       <clr-tab>
-        <button clrTabLink>Explainable AI Resources</button>
-        <clr-tab-content *clrIfActive>
-          <h3>Select a Machine Learning Interpretability Method</h3>
-          <div class="btn-group">
-            <div class="radio btn">
-              <input type="radio" name="btn-group-demo-radios" id="btn-blackbox" (change)="handleButtonChange($event)" checked />
-              <label for="btn-blackbox">Black Box</label>
+        <button clrTabLink>Explainable AI (XAI)</button>
+        <ng-template [(clrIfActive)]="triggerTab1">
+          <clr-tab-content>
+            <h3>Select a Machine Learning Interpretability Method</h3>
+            <div class="btn-group">
+              <div class="radio btn">
+                <input type="radio" name="btn-group-demo-radios" id="btn-blackbox" (change)="handleButtonChange($event)" checked />
+                <label for="btn-blackbox">Black Box</label>
+              </div>
+              <div class="radio btn">
+                <input type="radio" name="btn-group-demo-radios" id="btn-whitebox" (change)="handleButtonChange($event)" />
+                <label for="btn-whitebox">White Box</label>
+              </div>
+              <div class="radio btn">
+                <input type="radio" name="btn-group-demo-radios" id="btn-fairness" (change)="handleButtonChange($event)" />
+                <label for="btn-fairness">Enhance Fairness of Model</label>
+              </div>
+              <div class="radio btn">
+                <input type="radio" name="btn-group-demo-radios" id="btn-sensitivity" (change)="handleButtonChange($event)" />
+                <label for="btn-sensitivity">Test Sensitivity of Predictions</label>
+              </div>
             </div>
-            <div class="radio btn">
-              <input type="radio" name="btn-group-demo-radios" id="btn-whitebox" (change)="handleButtonChange($event)" />
-              <label for="btn-whitebox">White Box</label>
+            <div class="content-container">
+                  <clr-datagrid class="datagrid-compact" [clrDgSingleSelected]="selected" (clrDgSingleSelectedChange)="selectionChanged($event)">
+                    <clr-dg-column>Resource</clr-dg-column>
+                    <clr-dg-column>Resource Type</clr-dg-column>
+                    <clr-dg-column>Data Type</clr-dg-column>
+                    <clr-dg-column>Year</clr-dg-column>
+                    <clr-dg-column>Citations</clr-dg-column>
+                    <clr-dg-column>Category</clr-dg-column>
+                    <clr-dg-column>Local or Global</clr-dg-column>
+                    <clr-dg-column>Model Specific or Agnostic</clr-dg-column>
+                  
+                    <clr-dg-row *clrDgItems="let res of selfdescription" [clrDgItem]="res">
+                      <clr-dg-cell>{{res.resource}}</clr-dg-cell>
+                      <clr-dg-cell>{{getResourceType(res.resourceType)}}</clr-dg-cell>
+                      <clr-dg-cell>{{getDataType(res.dataTypes)}}</clr-dg-cell>
+                      <clr-dg-cell>{{res.year}}</clr-dg-cell>
+                      <clr-dg-cell>{{res.citationsPerYear}}</clr-dg-cell>
+                      <clr-dg-cell>{{getPurposeOfInterpretability(res.purposeOfInterpretability)}}</clr-dg-cell>
+                      <clr-dg-cell>{{getLocalOrGlobal(res.localOrGlobal)}}</clr-dg-cell>
+                      <clr-dg-cell>{{getModelSpecificOrAgnostic(res.modelSpecificOrAgnostic)}}</clr-dg-cell>
+                    </clr-dg-row>
+                    <clr-dg-footer>
+                      <clr-dg-pagination #pagination [clrDgPageSize]="6">
+                        {{pagination.firstItem + 1}} - {{pagination.lastItem + 1}} of {{selfdescription.length}} resources
+                      </clr-dg-pagination>
+                    </clr-dg-footer>
+                  </clr-datagrid>
             </div>
-            <div class="radio btn">
-              <input type="radio" name="btn-group-demo-radios" id="btn-fairness" (change)="handleButtonChange($event)" />
-              <label for="btn-fairness">Enhance Fairness of Model</label>
+            <div class="content-container">
+                <div class="card" *ngIf="selected">
+                  <div class="card-header">
+                    {{selected.resource}}
+                  </div>
+                  <div class="card-block">
+                    <div class="card-title">
+                      Available resources
+                    </div>
+                    <div class="card-text">
+                      <div class="flex-container">
+                        <div>Paper: <a href="{{selected.sourceURL}}" target="_blank">{{selected.sourceURL}}</a></div>
+                        <div>Repository: <a href="{{selected.repositoryUrl}}" target="_blank">{{selected.repositoryUrl}}</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
-            <div class="radio btn">
-              <input type="radio" name="btn-group-demo-radios" id="btn-sensitivity" (change)="handleButtonChange($event)" />
-              <label for="btn-sensitivity">Test Sensitivity of Predictions</label>
-            </div>
-          </div>
-          <div class="content-container">
-                <clr-datagrid class="datagrid-compact" [clrDgSingleSelected]="selected" (clrDgSingleSelectedChange)="selectionChanged($event)">
-                  <clr-dg-column>Resource</clr-dg-column>
-                  <clr-dg-column>Resource Type</clr-dg-column>
-                  <clr-dg-column>Data Type</clr-dg-column>
-                  <clr-dg-column>Year</clr-dg-column>
-                  <clr-dg-column>Citations</clr-dg-column>
-                  <clr-dg-column>Category</clr-dg-column>
-                  <clr-dg-column>Local or Global</clr-dg-column>
-                  <clr-dg-column>Model Specific or Agnostic</clr-dg-column>
-                
-                  <clr-dg-row *clrDgItems="let res of selfdescription" [clrDgItem]="res">
-                    <clr-dg-cell>{{res.resource}}</clr-dg-cell>
-                    <clr-dg-cell>{{getResourceType(res.resourceType)}}</clr-dg-cell>
-                    <clr-dg-cell>{{getDataType(res.dataTypes)}}</clr-dg-cell>
-                    <clr-dg-cell>{{res.year}}</clr-dg-cell>
-                    <clr-dg-cell>{{res.citationsPerYear}}</clr-dg-cell>
-                    <clr-dg-cell>{{getPurposeOfInterpretability(res.purposeOfInterpretability)}}</clr-dg-cell>
-                    <clr-dg-cell>{{getLocalOrGlobal(res.localOrGlobal)}}</clr-dg-cell>
-                    <clr-dg-cell>{{getModelSpecificOrAgnostic(res.modelSpecificOrAgnostic)}}</clr-dg-cell>
-                  </clr-dg-row>
-                  <clr-dg-footer>
-                    <clr-dg-pagination #pagination [clrDgPageSize]="6">
-                      {{pagination.firstItem + 1}} - {{pagination.lastItem + 1}} of {{selfdescription.length}} resources
-                    </clr-dg-pagination>
-                  </clr-dg-footer>
-                </clr-datagrid>
-          </div>
-          <div class="content-container">
+            <div class="content-container">
               <div class="card" *ngIf="selected">
                 <div class="card-header">
-                  {{selected.resource}}
+                  Definitions
                 </div>
                 <div class="card-block">
-                  <div class="card-title">
-                    Available resources
-                  </div>
-                  <div class="card-text">
+                  <div class="card-text" *ngIf="selected">
                     <div class="flex-container">
-                      <div>Paper: <a href="{{selected.sourceURL}}" target="_blank">{{selected.sourceURL}}</a></div>
-                      <div>Repository: <a href="{{selected.repositoryUrl}}" target="_blank">{{selected.repositoryUrl}}</a></div>
+                      <div class="listitem">
+                        <b>{{definitions.blackBox.title}}: </b>{{definitions.blackBox.definition}}
+                      </div>
+                      <div class="listitem">
+                        <b>{{definitions.localOrGlobal.title}}: </b>{{definitions.localOrGlobal.definition}}
+                      </div>
+                      <div>
+                        <b>{{definitions.modelSpecificOrAgnostic.title}}: </b>{{definitions.modelSpecificOrAgnostic.definition}}
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
           </div>
-          <div class="content-container">
-            <div class="card" *ngIf="selected">
-              <div class="card-header">
-                Definitions
-              </div>
-              <div class="card-block">
-                <div class="card-text" *ngIf="selected">
-                  <div class="flex-container">
-                    <div class="listitem">
-                      <b>{{definitions.blackBox.title}}: </b>{{definitions.blackBox.definition}}
-                    </div>
-                    <div class="listitem">
-                      <b>{{definitions.localOrGlobal.title}}: </b>{{definitions.localOrGlobal.definition}}
-                    </div>
-                    <div>
-                      <b>{{definitions.modelSpecificOrAgnostic.title}}: </b>{{definitions.modelSpecificOrAgnostic.definition}}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-        </clr-tab-content>
+          </clr-tab-content>
+        </ng-template>
       </clr-tab>
+
+      <!-- Agile AI Frameworks -->
       <clr-tab>
-        <button clrTabLink>Agile Best Practices</button>
-        <clr-tab-content *clrIfActive>
-          <div class="content-container">
+        <button clrTabLink>Agile AI Frameworks</button>
+        <ng-template [(clrIfActive)]="triggerTab2">
+          <clr-tab-content>
+            <div class="content-container">
               <a routerLink="/"></a>
             <router-outlet></router-outlet>          
           </div>
-        </clr-tab-content>
+          </clr-tab-content>
+        </ng-template>
       </clr-tab>
+
+      <!-- Graph Data Science -->
+      <clr-tab>
+        <button clrTabLink>Graph Data Science</button>
+        <ng-template [(clrIfActive)]="triggerTab3">
+          <clr-tab-content>
+            <div class="content-container">
+              <app-graph-data-science></app-graph-data-science>
+          </div>
+          </clr-tab-content>
+        </ng-template>
+      </clr-tab>
+
+      <!-- <clr-tab>
+        <button clrTabLink>Management</button>
+        <ng-template [(clrIfActive)]="triggerTab1">
+          <clr-tab-content>
+            Management content
+          </clr-tab-content>
+        </ng-template>
+      </clr-tab> -->
+
     </clr-tabs>
   </div>

@@ -5,6 +5,7 @@ import airesourcesFairness from '../assets/ai-resources-fairness.json';
 import airesourcesSensitivity from '../assets/ai-resources-sensitivity.json';
 
 import { AgileBestPracticesIndexComponent } from './agile-best-practices-index/agile-best-practices-index.component';
+import { GraphDataScienceComponent } from './graph-data-science/graph-data-science.component'
 
 import aidefs from '../assets/ai-definitions.json';
 
@@ -21,6 +22,9 @@ export class AppComponent implements OnInit {
   counter: number = 0;
   selected: any = {};
   selectedButton: any = "btn";
+  triggerTab1: boolean = false;
+  triggerTab2: boolean = false;
+  triggerTab3: boolean = false;
 
   constructor() {
    }
@@ -33,6 +37,19 @@ export class AppComponent implements OnInit {
   selectionChanged(event){
     this.selected = event;
     console.log(this.selected);
+  }
+
+  triggerTabChange(event) {
+    if (event.target.id == "explainableAIResources") {
+      this.triggerTab1 = true;
+    }
+    else if (event.target.id == "agileAIFrameworks") {
+      this.triggerTab2 = true;
+    }
+    else if (event.target.id == "agileAIFrameworks") {
+      this.triggerTab3 = true;
+    }
+    console.log(event);
   }
 
   handleButtonChange(event) {
