@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mds-broker": {
+    "sep-ai-web": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mds-broker",
+            "outputPath": "dist/sep-ai-web",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -73,18 +73,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "mds-broker:build"
+            "browserTarget": "sep-ai-web:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "mds-broker:build:production"
+              "browserTarget": "sep-ai-web:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mds-broker:build"
+            "browserTarget": "sep-ai-web:build"
           }
         },
         "test": {
@@ -121,18 +121,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "mds-broker:serve"
+            "devServerTarget": "sep-ai-web:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "mds-broker:serve:production"
+              "devServerTarget": "sep-ai-web:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "mds-broker",
+  "defaultProject": "sep-ai-web",
   "cli": {
     "analytics": "698dc30d-8bc2-4ab6-968b-abeb9b824f9e"
   }

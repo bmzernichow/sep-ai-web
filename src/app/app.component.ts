@@ -7,7 +7,10 @@ import airesourcesSensitivity from '../assets/ai-resources-sensitivity.json';
 import { AgileBestPracticesIndexComponent } from './agile-best-practices-index/agile-best-practices-index.component';
 import { GraphDataScienceComponent } from './graph-data-science/graph-data-science.component'
 
-import aidefs from '../assets/ai-definitions.json';
+import aidefsBlackBox from '../assets/ai-definitions-black-box.json';
+import aidefsWhiteBox from '../assets/ai-definitions-white-box.json';
+import aidefsFairness from '../assets/ai-definitions-fairness.json';
+import aidefsSensitivity from '../assets/ai-definitions-sensitivity.json';
 
 @Component({
   selector: 'app-root',
@@ -31,7 +34,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.selfdescription = airesourcesBlackBox;
-    this.definitions = aidefs;
+    this.definitions = aidefsBlackBox;
   }
 
   selectionChanged(event){
@@ -46,7 +49,7 @@ export class AppComponent implements OnInit {
     else if (event.target.id == "agileAIFrameworks") {
       this.triggerTab2 = true;
     }
-    else if (event.target.id == "agileAIFrameworks") {
+    else if (event.target.id == "graphDataScience") {
       this.triggerTab3 = true;
     }
     console.log(event);
@@ -56,21 +59,25 @@ export class AppComponent implements OnInit {
     if (event.srcElement.id == "btn-blackbox") {
       this.selectedButton = event.srcElement.id;
       this.selfdescription = airesourcesBlackBox;
+      this.definitions = aidefsBlackBox;
       console.log(event.srcElement.id);
     }
     else if (event.srcElement.id == "btn-whitebox") {
       this.selectedButton = event.srcElement.id;
       this.selfdescription = airesourcesWhiteBox;
+      this.definitions = aidefsWhiteBox;
       console.log(event.srcElement.id);
     }
     else if (event.srcElement.id == "btn-fairness") {
       this.selectedButton = event.srcElement.id;
       this.selfdescription = airesourcesFairness;
+      this.definitions = aidefsFairness;
       console.log(event.srcElement.id);
     }
     else if (event.srcElement.id == "btn-sensitivity") {
       this.selectedButton = event.srcElement.id;
       this.selfdescription = airesourcesSensitivity;
+      this.definitions = aidefsSensitivity;
       console.log(event.srcElement.id);
     }
   }
@@ -125,7 +132,7 @@ export class AppComponent implements OnInit {
       return "Black Box";
     }
     else if (status.enhanceFairness === true) {
-      return "Enhance fairness of model";
+      return "Enhance fairness";
     }
     else if (status.testSensitivityOfPredictions === true) {
       return "Test sensitivity of predictions";

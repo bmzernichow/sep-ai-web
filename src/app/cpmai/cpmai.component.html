@@ -1,70 +1,98 @@
-<!DOCTYPE html>
-<html>
-<body>
+<h3>CPMAI (Cognitive Project Management for Artificial Intelligence Methodology)</h3>
 
-<h1>Data Driven Scrum (DDS)</h1>
+<p>CPMAI extends the well-known CRISP-DM methodology with AI and ML specific documents, processes, and tasks. The
+  CPMAI methodology also incorporates the latest practices in Agile Methodologies and adds additional DataOps
+  activities that aim to make CPMAI data-first, AI-relevant, highly iterative, and focused on the right tasks for
+  operational success.</p>
 
-<p>Data Driven Scrum (DDS)) was designed with data science in mind. Specifically, DDS supports lean iterative exploratory data science analysis, while acknowledging that iterations will vary in length due to the phase of the project (collecting data vs creating a machine learning analysis).</p>
+<h3>Key concepts</h3>
 
-<h2>Key concepts</h2>
+<p>The CPMAI methodology is composed of six primary phases:</p>
 
-<p>Data Driven Scrum (DDS) counters the main problem with fixed-time sprints by removing some stuff from Scrum:</p>
-
-<ul>
-  <li>Iterations are variable-length, capacity-focused, and they can overlap.</li>
-  <li>Instead of delivering potentially shippable backlog items, the iterations focus on data science native concepts (e.g. experiments, questions to be answered). Each of these items are broken down into tasks to create, observe, and analyze.</li>
-  <li>Backlog item selection occurs in a more continuous manner.</li>
-</ul>
-
-<h3>Artefacts</h3>
-
-<img src="assets/img/dds_backlog.webp">
-
-<p>The Item Backlog is a prioritized list of BItems (i.e., work to be done). The Item Breakdown Board (IBB) is the place where each Item (in the item backlog) is broken down into tasks, with at least one create task, one observe task and one analyze task for each item. Items on the product backlog are broken down to into their component tasks prior to being worked on by the team, and each item has its own IBB. The Task Board is a visual representation of the work items currently in progress. For work on an item to be started (i.e., being worked on by the team), the tasks for that item are moved from the IBB to the Task Board and are displayed on the board, typically in the ‘to do’ column (items not yet started are on the item backlog). The task board has several columns (at a minimum, ‘to do’, ‘in progress’, ‘done’) and each task flows across the board, thus visually showing work being done within the team. As with Kanban, to facilitate task throughput, each team defines a maximum number of tasks within a single column.</p>
-
-<h2>Best practices</h2>
-
-<ul>
-  <li><b>Allow capability-based iterations:</b> There is no one-size-fits-all here, sometimes it makes sense to have a one-day iteration, other times a three-week iteration (due to how long it takes to acquire/clean data, or how long it takes for an exploratory analysis).</li>
-  <li><b>Decouple meetings from an iteration:</b> Meetings at the end of an iteration are fundamental for learning and planning improvements. But since an iteration could be very short (ex. one day for a specific exploratory analysis), DDS meetings (such as a retrospective to improve the process) should be based on a logical time-based window, not linked to each iteration.</li>
-  <li><b>Only require high-level item estimation:</b> Defining an explicit timeline for an exploratory analysis can be difficult, so one should not need to generate accurate detailed task estimations in order to use the framework.</li>
-</ul>
+<table>
+  <td style="vertical-align:top">
+    <img src="assets/img/cpmai_phases.png" height="800"  style="padding-right: 30px; padding-bottom: 30px;">
+  </td>
+  <td style="vertical-align:top">
+    <ul>
+      <li><b>Business understanding:</b></li>
+      <ul>
+        <li>What are the core business requirements and objectives?</li>
+        <li>Why does this project need AI?</li>
+        <li>How would we meet those needs with AI?</li>
+        <li>How can we succeed and not fail in bad ways?</li>
+      </ul>
+      <li><b>Data understanding:</b></li>
+      <ul>
+        <li>What are the core data requirements and objectives?</li>
+        <li>Where are the AI-relevant data sources?</li>
+        <li>What type of data is available for AI projects to meet business objectives?</li>
+        <li>What is the quality of the available data?</li>
+      </ul>
+      <li><b>Data preparation:</b></li>
+      <ul>
+        <li>Get the data into a condition where it can be used to address business requirements</li>
+        <li>Selection, ingestion, and combination of data</li>
+        <li>Cleansing, labeling, and data preparation</li>
+        <li>Data formatting, augmentation, construction of data</li>
+      </ul>
+      <li><b>Data modeling:</b></li>
+      <ul>
+        <li>Select Modeling Techniques</li>
+        <li>Algorithm selection</li>
+        <li>Modeling Assumptions</li>
+        <li>Generate Test Design</li>
+        <li>Model development and iteration</li>
+        <li>Hyperparameter optimization method</li>
+        <li>Model assessment</li>
+        <li>Model iteration</li>
+      </ul>
+      <li><b>Model evaluation:</b></li>
+      <ul>
+        <li>Is the trained model actually learning?</li>
+        <li>Does the model really work against validated data?</li>
+        <li>Is the model right and wrong in acceptable ways?</li>
+      </ul>
+      <li><b>Model operationalization:</b></li>
+      <ul>
+        <li>Putting AI models into operation</li>
+        <li>Inference phase of AI</li>
+        <li>Model deployment configuration</li>
+        <li>Real-world model monitoring and management</li>
+      </ul>
+    </ul>
+  </td>
+</table>
 
 <h2>Pros & cons</h2>
 
 <table style="width:100%" border="1">
   <tr>
-    <th style="text-align:left">Pros</th>
-    <th style="text-align:left">Cons</th>
+    <th style="text-align:middle">Pros</th>
+    <th style="text-align:middle">Cons</th>
   </tr>
   <tr>
-    <td>
+    <td style="vertical-align:top">
       <ul>
-        <li><b>Agile is iterative experimentation:</b> Agile is intended to be a sequence of iterative experimentation and adaptation cycles.</li>
-        <li><b>Iterations are capability based:</b> Teams work iteratively on a given set of items until they are done (no inflexible deadlines).</li>
-        <li><b>Focus on create, observe, analyze:</b> Each iteration always follows three core steps: Create something, observe its performance, and analyze the results.</li>
-        <li><b>Easily integrate with Scrum:</b> DDS's interfaces can be seamlessly integrated within a traditional Scrum-based organization.</li>
+        <li><b>AI-specific extension of CRISP-DM:</b> Extends the well-known CRISP-DM methodology with AI and ML
+          specific documents, processes, and tasks. </li>
+        <li><b>Agile extension of CRISP-DM:</b> Incorporates practices from agile methodologies.</li>
       </ul>
     </td>
-    <td>
+    <td style="vertical-align:top">
       <ul>
-        <li><b>Not comprehensive:</b> Lack of life cycle can be a detractor to teams looking for defined steps, like those found in CRISP-DM.</li>
+        <li><b>Proprietary:</b>Cognilytica-developed methodology. Congilytica provides CPMAI training and
+          certification.</li>
       </ul>
     </td>
   </tr>
-</table>  
-
-<h2>Tool support</h2>
-
-<ul>
-  <li></li>
-</ul>
+</table>
 
 <h2>References</h2>
 
 <ul>
-  <li><a href="https://datadrivenscrum.com/how-DDS-works/" target="_blank" rel="noopener noreferrer">Data Driven Scrum (DDS) Guide: How it works</a></li>
+  <li><a href="https://www.cognilytica.com/cpmai-methodology/" target="_blank" rel="noopener noreferrer">CPMAI
+      Methodology</a></li>
 </ul>
 
-</body>
-</html>
+<p></p>

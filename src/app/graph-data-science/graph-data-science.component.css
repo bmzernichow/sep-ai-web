@@ -1,3 +1,16 @@
-table, th, td {
-    border: 1px solid black;
+
+p {  
+    margin: 0 0 1em;  
   }
+
+h3 {
+    padding-bottom: 20px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.container {
+  max-width: 90%;
+}

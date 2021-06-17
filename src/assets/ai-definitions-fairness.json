@@ -1,7 +1,7 @@
 {
-            "blackBox": {
-                "title": "Black-Box",
-                "definition": "This category encompasses methods that are concerned with black-box pretrained machine learning models. More specifically, such methods do not try to create interpretable models, but, instead, try to interpret already trained, often complex models."
+            "method": {
+                "title": "Enhance Fairness of Model",
+                "definition": "Because machine learning systems are increasingly adopted in real life applications, any inequities or discrimination that are promoted by those systems have the potential to directly affect human lives. Machine Learning Fairness is a sub-domain of machine learning interpretability that focuses solely on the social and ethical impact of machine learning algorithms by evaluating them in terms impartiality and discrimination."
                 },
             "localOrGlobal": {
                 "title": "Local vs Global",

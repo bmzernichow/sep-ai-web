@@ -1,10 +1,10 @@
 <div class="main-container">
   <header class="header-6">
     <div class="branding">
-      <!-- <a href="..." class="nav-link"> -->
+      <a href="..." class="nav-link">
         <clr-icon shape="vm" class="is-inverse"></clr-icon>
         <span class="title">Data Science: Explainable AI (XAI), Agile AI Frameworks and Graph Data Science</span>
-      <!-- </a> -->
+      </a>
     </div>
   </header>
 
@@ -19,7 +19,7 @@
             <div class="content-area">
               <p>Data science is an interdisciplinary field that uses scientific methods, processes, algorithms and systems to
                 extract knowledge and insights from structured and unstructured data [<a
-                  href="https://cacm.acm.org/magazines/2013/12/169933-data-science-and-prediction/fulltext">Dahrm V, 2003</a>].
+                  href="https://cacm.acm.org/magazines/2013/12/169933-data-science-and-prediction/fulltext" target="_blank" rel="noopener noreferrer">Dahrm V, 2003</a>].
                 It is related to data mining, machine learning (ML) and big data, and can be applied to data
                 across a broad range of application domains.</p>
               <p>The goal of this website is to provide a state-of-the-art (SOTA) overview of three areas within data science:</p>
@@ -43,12 +43,12 @@
                           deployed, it is becoming increasingly important that we are able to explain the behaviour of the AI solutions
                           so that we can trust that the predictions, recommendations and decisions they make are safe and
                           non-discriminatory. The
-                          <a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_21_1682">European Commission</a> is
+                          <a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_21_1682" target="_blank" rel="noopener noreferrer">European Commission</a> is
                           currently proposing rules and actions for trust in high-risk AI systems. Such systems must be subject to
                           strict
                           obligations before being offered in the market.<br><br> This section of the website provides an overview of
                           methods and tools for XAI based on the paper <a
-                            href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7824368/">"Explainable AI: A Review
+                            href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7824368/" target="_blank" rel="noopener noreferrer">"Explainable AI: A Review
                             of Machine Learning Interpretability Methods"</a> by Linardatos et al. The paper gives a comprehensive
                           overview of XAI resources and classifies them according to local vs global explainability, data types, purpose
                           of interpretability, and model specific vs model agnostic applicability.
@@ -85,7 +85,7 @@
                           most popular agile AI frameworks, and a comparison table that gives you some guidelines for selecting the one
                           that
                           best fits your data science project. As a starting point we have used the paper <a
-                            href="https://ieeexplore.ieee.org/abstract/document/9377813">"Identifying the most Common Frameworks
+                            href="https://ieeexplore.ieee.org/abstract/document/9377813" target="_blank" rel="noopener noreferrer">"Identifying the most Common Frameworks
                             Data Science Teams Use to Structure and Coordinate their Projects"</a> by Saltz et al. The paper presents
                           the results
                           of a study of 109 professionals regarding the frameworks they use for data science projects. According to the
@@ -118,14 +118,18 @@
                       </tr>
                       <tr>
                         <td width="12%"><a href="graph-data-science/index.html"><img src="assets/img/graph-data-science.png" height="200"></a></td>
-                        <td width="88%" style="text-align:left;vertical-align:top;padding-left:20px">Graphs used to represent connected data are gaining
+                        <td width="88%" style="text-align:left;vertical-align:top">Graphs used to represent connected data are gaining
                           popularity in the area of machine learning and tools for graph analytics and graph-native machine learning are
                           starting to emerge. A graph data structure has two basic elements: nodes and edges.
-                          Nodes represents entities in the data, while edges represents relationships between entities. <br><br> This
-                          section
-                          of the website
-                          provides an overview of graph analytics and machine learning tools available for two different types of graph
-                          data models: Labeled Property Graphs and RDF Knowledge Graphs.</td>
+                          Nodes represents entities in the data, while edges represents relationships between entities. The paper <a
+                            href="http://www.semantic-web-journal.net/content/role-knowledge-graphs-explainable-ai-0" target="_blank" rel="noopener noreferrer">"On The
+                            Role of Knowledge Graphs in Explainable AI"</a> by F. Leccue reviews explainable AI (XAI) and presents
+                          limitations and opportunities for Knowledge Graphs and their underlying technologies within different fields
+                          of AI, amongst others Machine Learning. <br><br> This section of the website provides an overview of graph
+                          analytics and machine learning tools available for two different types of graph
+                          data models: RDF Graphs and Property Graphs. Additionaly, it goes further into the research challenges and
+                          opportunities for Knowledge Graphs.
+                        </td>
                       </tr>
                     </table>
                   </div>
@@ -136,6 +140,7 @@
               </div>
             </div>
           </div>
+          <p></p>
         </clr-tab-content>
       </clr-tab>
 
@@ -218,7 +223,7 @@
                   <div class="card-text" *ngIf="selected">
                     <div class="flex-container">
                       <div class="listitem">
-                        <b>{{definitions.blackBox.title}}: </b>{{definitions.blackBox.definition}}
+                        <b>{{definitions.method.title}}: </b>{{definitions.method.definition}}
                       </div>
                       <div class="listitem">
                         <b>{{definitions.localOrGlobal.title}}: </b>{{definitions.localOrGlobal.definition}}
@@ -259,15 +264,6 @@
           </clr-tab-content>
         </ng-template>
       </clr-tab>
-
-      <!-- <clr-tab>
-        <button clrTabLink>Management</button>
-        <ng-template [(clrIfActive)]="triggerTab1">
-          <clr-tab-content>
-            Management content
-          </clr-tab-content>
-        </ng-template>
-      </clr-tab> -->
 
     </clr-tabs>
   </div>

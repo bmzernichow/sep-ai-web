@@ -1,39 +1,527 @@
 [
-        {
-            "resource": "debiaswe",
-            "id": 1,
-            "citationsPerYear": 217,
-            "year": 2016,
-            "description": "Text",
-            "reference": "Bolukbasi, T.; Chang, K.W.; Zou, J.Y.; Saligrama, V.; Kalai, A.T. Man is to computer programmer as woman is to homemaker? Debiasing word embeddings. In Proceedings of the Advances in Neural Information Processing Systems, Barcelona, Spain, 5–10 December 2016; pp. 4349–4357.",
-            "resourceType": {
-                "paper": false,
-                "tool": true,
-                "method": false
-            },
-            "sourceURL": "https://arxiv.org/abs/1607.06520",
-            "repositoryUrl": "https://github.com/marcoancona/DeepExplain",
-            "localOrGlobal": {
-                "local": false,
-                "global": true
-                },
-            "dataTypes": {
-                "tabular": false,
-                "text": true,
-                "image": false,
-                "graph": false
-                },
-            "purposeOfInterpretability": {
-                "intrinsic": false,
-                "postHoc": false,
-                "enhanceFairness": true,
-                "testSensitivityOfPredictions": false
-                },
-            "modelSpecificOrAgnostic": {
-                "specific": false,
-                "agnostic": true,
-                "enhanceFairness": false,
-                "testSensitivityOfPredictions": false
-                }
-            }
-    ]
+    {
+        "resource": "equalized_odds_and_calibration",
+        "id": 1,
+        "citationsPerYear": 242,
+        "year": 2016,
+        "description": "Text",
+        "reference": "Hardt, M.; Price, E.; Srebro, N. Equality of opportunity in supervised learning. In Proceedings of the Advances in Neural Information Processing Systems, Barcelona, Spain, 5–10 December 2016; pp. 3315–3323.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1610.02413",
+        "repositoryUrl": "https://github.com/gpleiss/equalized_odds_and_calibration",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "fairlearn",
+        "id": 1,
+        "citationsPerYear": 242,
+        "year": 2016,
+        "description": "Text",
+        "reference": "Hardt, M.; Price, E.; Srebro, N. Equality of opportunity in supervised learning. In Proceedings of the Advances in Neural Information Processing Systems, Barcelona, Spain, 5–10 December 2016; pp. 3315–3323.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1610.02413",
+        "repositoryUrl": "https://github.com/fairlearn/fairlearn",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "AIF360",
+        "id": 1,
+        "citationsPerYear": 242,
+        "year": 2016,
+        "description": "Text",
+        "reference": "Hardt, M.; Price, E.; Srebro, N. Equality of opportunity in supervised learning. In Proceedings of the Advances in Neural Information Processing Systems, Barcelona, Spain, 5–10 December 2016; pp. 3315–3323.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1610.02413",
+        "repositoryUrl": "https://github.com/Trusted-AI/AIF360",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "debiaswe",
+        "id": 1,
+        "citationsPerYear": 217,
+        "year": 2016,
+        "description": "Text",
+        "reference": "Bolukbasi, T.; Chang, K.W.; Zou, J.Y.; Saligrama, V.; Kalai, A.T. Man is to computer programmer as woman is to homemaker? Debiasing word embeddings. In Proceedings of the Advances in Neural Information Processing Systems, Barcelona, Spain, 5–10 December 2016; pp. 4349–4357.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1607.06520",
+        "repositoryUrl": "https://github.com/tolga-b/debiaswe",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": false,
+            "text": true,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "fairness",
+        "id": 1,
+        "citationsPerYear": 133,
+        "year": 2012,
+        "description": "Text",
+        "reference": "Dwork, C.; Hardt, M.; Pitassi, T.; Reingold, O.; Zemel, R. Fairness through awareness. In Proceedings of the 3rd Innovations in Theoretical Computer Science Conference, Cambridge, MA, USA, 8–10 January 2012; pp. 214–226.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://dl.acm.org/doi/10.1145/2090236.2090255",
+        "repositoryUrl": "https://github.com/dodger487/fairness",
+        "localOrGlobal": {
+            "local": true,
+            "global": false
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "Aequitas",
+        "id": 1,
+        "citationsPerYear": 125,
+        "year": 2015,
+        "description": "Text",
+        "reference": "Feldman, M.; Friedler, S.A.; Moeller, J.; Scheidegger, C.; Venkatasubramanian, S. Certifying and removing disparate impact. In Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, Sydney, Australia, 10–13 August 2015; pp. 259–268.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1412.3756",
+        "repositoryUrl": "https://github.com/dssg/aequitas",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "AIF360",
+        "id": 1,
+        "citationsPerYear": 125,
+        "year": 2015,
+        "description": "Text",
+        "reference": "Feldman, M.; Friedler, S.A.; Moeller, J.; Scheidegger, C.; Venkatasubramanian, S. Certifying and removing disparate impact. In Proceedings of the 21th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, Sydney, Australia, 10–13 August 2015; pp. 259–268.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1412.3756",
+        "repositoryUrl": "https://github.com/Trusted-AI/AIF360",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "fair-classification",
+        "id": 1,
+        "citationsPerYear": 118,
+        "year": 2017,
+        "description": "Text",
+        "reference": "Zafar, M.B.; Valera, I.; Gomez Rodriguez, M.; Gummadi, K.P. Fairness beyond disparate treatment & disparate impact: Learning classification without disparate mistreatment. In Proceedings of the 26th International Conference onWorldWideWeb, Perth, Australia, 3–7 April 2017; pp. 1171–1180.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1610.08452",
+        "repositoryUrl": "https://github.com/mbilalzafar/fair-classification",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "fairness-in-ml",
+        "id": 1,
+        "citationsPerYear": 116,
+        "year": 2017,
+        "description": "Text",
+        "reference": "Kusner, M.J.; Loftus, J.; Russell, C.; Silva, R. Counterfactual fairness. In Proceedings of the Advances in Neural Information Processing Systems, Long Beach, CA, USA, 4–9 December 2017; pp. 4066–4076.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://dl.acm.org/doi/10.5555/3294996.3295162",
+        "repositoryUrl": "https://github.com/equialgo/fairness-in-ml",
+        "localOrGlobal": {
+            "local": true,
+            "global": false
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "fair-classification",
+        "id": 1,
+        "citationsPerYear": 111,
+        "year": 2017,
+        "description": "Text",
+        "reference": "Zafar, M.B.; Valera, I.; Rogriguez, M.G.; Gummadi, K.P. Fairness constraints: Mechanisms for fair classification. In Proceedings of the Artificial Intelligence and Statistics, Fort Lauderdale, FL, USA, 20–22 April 2017; pp. 962–970.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1507.05259",
+        "repositoryUrl": "https://github.com/mbilalzafar/fair-classification",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "fairlearn",
+        "id": 1,
+        "citationsPerYear": 94,
+        "year": 2018,
+        "description": "Text",
+        "reference": "Agarwal, A.; Beygelzimer, A.; Dudík, M.; Langford, J.;Wallach, H.M. A Reductions Approach to Fair Classification. In Proceedings of the 35th International Conference on Machine Learning, ICML 2018, Stockholmsmässan, Stockholm, Sweden, 10–15 July 2018; Volume 80, pp. 60–69.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1803.02453",
+        "repositoryUrl": "https://github.com/fairlearn/fairlearn",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "AIF360",
+        "id": 1,
+        "citationsPerYear": 76,
+        "year": 2018,
+        "description": "Text",
+        "reference": "Zemel, R.;Wu, Y.; Swersky, K.; Pitassi, T.; Dwork, C. Learning fair representations. In Proceedings of the International Conference on Machine Learning, Atlanta, GA, USA, 16–21 June 2013; pp. 325–333.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://dl.acm.org/doi/10.5555/3042817.3042973",
+        "repositoryUrl": "https://github.com/Trusted-AI/AIF360",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "ML-fairness-gym",
+        "id": 1,
+        "citationsPerYear": 52,
+        "year": 2018,
+        "description": "Text",
+        "reference": "Liu, L.T.; Dean, S.; Rolf, E.; Simchowitz, M.; Hardt, M. Delayed Impact of Fair Machine Learning. In Proceedings of the 35th International Conference on Machine Learning, ICML 2018, Stockholmsmässan, Stockholm, Sweden, 10–15 July 2018; Volume 80, pp. 3156–3164.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://arxiv.org/abs/1803.04383",
+        "repositoryUrl": "https://github.com/google/ml-fairness-gym",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    },
+    {
+        "resource": "fairness-comparison",
+        "id": 1,
+        "citationsPerYear": 45,
+        "year": 2010,
+        "description": "Text",
+        "reference": "Calders, T.; Verwer, S. Three naive Bayes approaches for discrimination-free classification. Data Min. Knowl. Discov. 2010, 21, 277–292.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://link.springer.com/article/10.1007/s10618-010-0190-x",
+        "repositoryUrl": "https://github.com/algofairness/fairness-comparison",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": true,
+            "agnostic": false
+        }
+    },
+    {
+        "resource": "procedurally_fair_learning",
+        "id": 1,
+        "citationsPerYear": 22,
+        "year": 2018,
+        "description": "Text",
+        "reference": "Grgic-Hlaca, N.; Zafar, M.B.; Gummadi, K.P.;Weller, A. Beyond Distributive Fairness in Algorithmic Decision Making: Feature Selection for Procedurally Fair Learning. In Proceedings of the AAAI, New Orleans, LA, USA, 2–7 February 2018; pp. 51–60.",
+        "resourceType": {
+            "paper": false,
+            "tool": true,
+            "method": false
+        },
+        "sourceURL": "https://ojs.aaai.org/index.php/AAAI/article/view/11296",
+        "repositoryUrl": "https://github.com/nina-gh/procedurally_fair_learning",
+        "localOrGlobal": {
+            "local": false,
+            "global": true
+        },
+        "dataTypes": {
+            "tabular": true,
+            "text": false,
+            "image": false,
+            "graph": false
+        },
+        "purposeOfInterpretability": {
+            "intrinsic": false,
+            "postHoc": false,
+            "enhanceFairness": true,
+            "testSensitivityOfPredictions": false
+        },
+        "modelSpecificOrAgnostic": {
+            "specific": false,
+            "agnostic": true
+        }
+    }
+]
