@@ -50,4 +50,4 @@ jobs:
       with:
         app-name: 'web-app-sep-ai'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_5eafbb7a92624b59825bfb66566000b6 }}
-        package: ./dist/mds-broker
+        package: ./dist/sep-ai-web
