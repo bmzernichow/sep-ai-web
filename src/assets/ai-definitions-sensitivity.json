@@ -1,7 +1,7 @@
 {
             "method": {
                 "title": "Test Sensitivity of Predictions",
-                "definition": "This category includes interpretability methods that attempt to assess and challenge the machine learning models in order to ensure that their predictions are trustworthy and reliable. These methods apply some form of sensitivity analysis, as models are tested with respect to the stability of their learnt functions and how sensitive their output predictions are with respect to subtle yet intentional changes in the corresponding inputs. Sensitivity analysis can be both a global and local interpretation technique, depending on whether the change to the output is analysed with a single example or across all examples in the dataset."
+                "definition": "This category includes interpretability methods that attempt to assess and challenge the machine learning models in order to ensure that their predictions are trustworthy and reliable. These methods apply some form of sensitivity analysis, as models are tested with respect to the stability of their learnt functions and how sensitive their output predictions are with respect to subtle yet intentional changes in the corresponding inputs."
                 },
             "localOrGlobal": {
                 "title": "Local vs Global",
